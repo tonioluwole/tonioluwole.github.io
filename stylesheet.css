@@ -1,9 +1,9 @@
 @keyframes spin {
-    15% { content:"Designer";}
-    30% { content:"Freelancer";}
-    50% { content:"Programmer";}
-    70% { content:"Entreprenuer";}
-    90% { content:"Problem Solver";}
+    20% { content:"Designer";}
+    40% { content:"Freelancer";}
+    60% { content:"Programmer";}
+    80% { content:"Entreprenuer";}
+    100% { content:"Problem Solver";}
   }
   
   @media screen and (max-width: 479px) {
