@@ -6,11 +6,6 @@
     100% { content:"Problem Solver";}
   }
   
-  @media screen and (max-width: 479px) {
-      /* start of phone styles */
-      #poppinsmain {
-          font-size:30px
-      }
   
       #main {
           display: inline-block;
@@ -19,7 +14,7 @@
           margin-right:50%;
           font-size: 3em;
       }
-  }
+  
   
   @media (max-width:5000px) {
       #poppinsmain {
