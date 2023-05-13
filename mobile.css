@@ -1,10 +1,9 @@
-@media screen and (max-width: 479px) {
+
 
     #poppinsmain {
-        font-size:10px
+        font-size:1000px
     }
 
-
-
-
+#contactbutton {
+    width: 100%;
 }
