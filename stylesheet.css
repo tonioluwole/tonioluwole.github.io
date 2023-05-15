@@ -368,20 +368,32 @@ p {
     width: 80%;
 }
 
-#1A, #2B {
+#pages img {
     width: 50%;
+    border-radius: 5px;
+    border: 2px solid #000;
+    opacity: 0.9;
+}
+
+
+#pages img:hover {
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid #000;
+    opacity: 0.9;
+    opacity: 1;
 }
 
 #pdfbutton {
     font-family: 'poppins'; 
     font-weight: bold;
+    color: #000;
     cursor: pointer;
     font-size: 20px;
     text-align:center;
     background-color: #ffffff;
     border-color: black;
     margin-top: 1em;
-    margin-right: 1em;
     padding:10px 20px 10px 20px;
     transition: all 0.3s ease-in-out;
 }
