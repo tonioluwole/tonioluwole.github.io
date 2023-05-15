@@ -370,13 +370,13 @@ p {
 
 #A1, #B2 {
     border-radius: 5px;
-    border: 2px solid #000;
+    border: solid #000;
     opacity: 0.9;
 
 }
 
 
-#A1, #B2:hover {
+#A1:hover, #B2:hover {
     opacity: 1;
 }
 
