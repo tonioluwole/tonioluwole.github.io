@@ -365,6 +365,19 @@ p {
     width: 70%;
 }
 
+#resume {
+    width: 100%;
+    
+}
+
+#pages {
+    width: 80%;
+}
+
+#1A, #2B {
+    width: 50%;
+}
+
 #gridcontainer{
     margin-left: auto;
     margin-right: auto;
@@ -378,9 +391,7 @@ p {
     margin-right: auto;
 }
 
-#resume {
-    width: 100%;
-}
+
 
 #footer{
     margin-top: 5em;
