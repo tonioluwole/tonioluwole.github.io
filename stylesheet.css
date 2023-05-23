@@ -365,10 +365,10 @@ p {
 }
 
 #pages {
-    width: 80%;
+    width: 50%;
 }
 
-#A1, #B2 {
+#A1, #B2  img{
     border-radius: 5px;
     border: solid #000;
     opacity: 0.9;
