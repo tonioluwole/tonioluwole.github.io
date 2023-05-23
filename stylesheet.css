@@ -368,10 +368,11 @@ p {
     width: 50%;
 }
 
-#A1, #B2  img{
+#A1 img, #B2  img{
     border-radius: 5px;
     border: solid #000;
     opacity: 0.9;
+    width: 50%;
 
 }
 
