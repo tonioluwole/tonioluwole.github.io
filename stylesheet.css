@@ -360,19 +360,18 @@ p {
 }
 
 #resume {
-    width: 50%;
+    width: 100%;
     
 }
 
 #pages {
-    width: 50%;
+    width: 80%;
 }
 
-#A1 img, #B2  img{
+#A1, #B2 {
     border-radius: 5px;
     border: solid #000;
     opacity: 0.9;
-    width: 50%;
 
 }
 
