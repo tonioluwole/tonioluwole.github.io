@@ -23,7 +23,6 @@
 #meetbutton {
     font-family: 'poppins'; 
     display: inline;
-    vertical-align: top;
     font-weight: bold;
     cursor: pointer;
     font-size: 100%;
@@ -31,16 +30,53 @@
     padding-right: 0.5em;
     text-align:center;
     background-color: #ffffff;
-    color: #ffffff;
+    color: black;
     border-color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
 #meetbutton:hover{
-    background-color: white;
+    background-color: transparent;
     border-color: #ffffff;
-    color: rgb(255, 255, 255);
-    border-radius: 3px;
+    color: white;
+}
+
+/* Animation for bar underneath */
+#meet:before{
+    content: '';
+    background: aqua;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+  
+#meet:hover {
+   background-position: 0;
+}
+  
+#meet:hover::before{
+    width: 97%;
+}
+
+/* Animation for meet with me link */
+#meet{
+    background-image: linear-gradient(
+      to right,
+      aqua,
+      aqua 50%,
+      aqua 50%
+    );
+    font-weight: 800;
+    vertical-align: top;
+    padding:5px 0;
+    position: relative;
+    background-clip:text;
+    -webkit-background-clip: text;
+    transition: all 0.3s ease-in-out;
 }
 
 #spin {
@@ -93,12 +129,17 @@ body {
 
 #rightnav {
     text-align: right;
-    display: block;
+    vertical-align: middle;
+    display: inline;
     float: right;
 }
 
 #rightnav img {
-    width: 40px;
+    width: 2.5vmax;
+}
+
+#rightnav a {
+    margin-left: 1em;
 }
 
 a, a:link, a:visited{
@@ -118,50 +159,8 @@ a, a:link, a:visited{
 
 }
 
-#rightnav a {
-    margin-left: 1em;
-}
-
 a {
     text-decoration: none;
-}
-
-/* Animation for meet with me link */
-#meet{
-    background-image: linear-gradient(
-      to right,
-      #ffffff,
-      #ffffff 50%,
-      aqua 50%
-    );
-    font-weight: 800;
-    vertical-align: top;
-    padding:5px 0;
-    position: relative;
-    background-clip:text;
-    -webkit-background-clip: text;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Animation for bar underneath */
-#meet:before{
-    content: '';
-    background: aqua;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    transition: all 0.3s ease-in-out;
-}
-  
-#meet:hover {
-   background-position: 0;
-}
-  
-#meet:hover::before{
-    width: 100%;
 }
 
 .navMenu a:hover {
@@ -260,7 +259,6 @@ p {
     height: auto;
     max-width: 200px;
     vertical-align: middle;
-    vertical-align: middle;
 }
 
 #aboutme {
@@ -305,9 +303,9 @@ p {
 }
 
 #pdfbutton:hover{
-    background-color: transparent;
+    background-color: white;
     border-color: #000;
-    color: aqua;
+    color: white;
     border-radius: 3px;
 }
 
