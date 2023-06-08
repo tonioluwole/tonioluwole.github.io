@@ -23,6 +23,7 @@
 #meetbutton {
     font-family: 'poppins'; 
     display: inline;
+    vertical-align: top;
     font-weight: bold;
     cursor: pointer;
     font-size: 100%;
