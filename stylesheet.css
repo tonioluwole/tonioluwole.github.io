@@ -6,16 +6,6 @@
     100% { content:"Problem Solver";}
   }
   
-  
-      #main {
-          display: inline-block;
-          vertical-align: middle;
-          align-items: start;
-          margin-right:50%;
-          font-size: 3em;
-      }
-  
-  
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
   * {
     margin: 0;
@@ -28,26 +18,26 @@
     font-family: 'poppins'; 
     font-size: 35px;
     color:#ffffff;
-    margin-top: -20px
 }
 
-#contactbutton {
+#meetbutton {
     font-family: 'poppins'; 
+    display: inline;
     font-weight: bold;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     text-align:center;
     background-color: #ffffff;
-    border-color: black;
-    margin-top: 1em;
-    margin-right: 1em;
-    padding:10px 20px 10px 20px;
+    color: #000000;
+    border-color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
-#contactbutton:hover{
+#meetbutton:hover{
     background-color: transparent;
-    border-color: #000;
+    border-color: #ffffff;
     color: aqua;
     border-radius: 3px;
 }
@@ -58,20 +48,19 @@
 
 #spin:after {
   content:"Developer";
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 /* Hero section stylizing*/
 #hero {
-    font-size: 75px;
+    font-size: 5vmax;
     font-weight: bold;
     font-family: 'Poppins';
 }
 
 .hero{
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
+    text-align:left;
+    margin-left: 10%;
 }
 
 body {
@@ -80,11 +69,11 @@ body {
 }
 
 .hero {
-    margin-top: 16%;
-    margin-bottom: 16%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    text-align: left;
     display: block;
-    color:#ffffff;
-    width: 100%;
+    width: 60%;
 }
 
 .mynavbar{
@@ -92,21 +81,19 @@ body {
     width: 100%;
 }
 
-#main {
-    display: inline-block;
-    vertical-align: middle;
-    align-items: start;
-    margin-right:100%;
-    font-size: 3em;
-}
 .navMenu {
     display: block;
     padding-top: 1em;
     padding-right: 2em;
     padding-bottom: 1em;
     text-align: left;
-    font-size:1.2em;
-    background-color: #000;
+    background-color: #000000;
+}
+
+#rightnav {
+    text-align: right;
+    display: block;
+    float: right;
 }
 
 a, a:link, a:visited{
@@ -116,15 +103,18 @@ a, a:link, a:visited{
 .navMenu a, a:visited {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.5vmax;
   text-transform: uppercase;
   font-weight: bold;
-  text-align: right;
   margin-left: 2em;
   width: 80px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
+}
+
+#rightnav a {
+    margin-left: 1em;
 }
 
 a {
@@ -140,8 +130,6 @@ a {
       aqua 50%
     );
     background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
     font-weight: 800;
     padding: 5px 0;
     position: relative;
@@ -160,7 +148,7 @@ a {
     bottom: -3px;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     transition: all 0.3s ease-in-out;
 }
   
@@ -172,103 +160,21 @@ a {
     width: 100%;
 }
 
-/* Animation for email  link */
-#email{
-    background-image: linear-gradient(
-      to right,
-      aqua,
-      aqua 50%,
-      #fff 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    font-weight: 800;
-    padding: 5px 0;
-    position: relative;
-    background-clip:text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-    margin-left: 1.5em;
-}
-
-/* Animation for bar underneath */
-#email:before{
-    content: '';
-    background: #fff;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
-}
-  
- #email:hover {
-   background-position: 0;
-}
-  
-#email:hover::before{
-    width: 100%;
-}
-
 .navMenu a:hover {
   color: aqua;
 }
 
 .navMenu .dot {
   width: 6px;
-  text-align: right;
+  text-align: left;
   height: 6px;
   background: aqua;
   border-radius: 50%;
   opacity: 0;
-  margin-left: auto;
+  margin-right: auto;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
-.navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(-620px);
-    transform: translateX(-620px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(-475px);
-  transform: translateX(-475px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(-320px);
-  transform: translateX(-320px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(-185px);
-  transform: translateX(-185px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(5):hover ~ .dot {
-    -webkit-transform: translateX(-45px);
-    transform: translateX(-45px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
 
 .portfolio {
     margin-left: auto;
@@ -309,24 +215,22 @@ table {
     opacity:1;
 }
 
-.info {
-    display: none;
-    
-    top: 100px;
-    left: 0;
-    text-align: center;
-  }
-
 h1 {
-    text-align: center;
-    font-size: 2rem;
     color: aqua;
 }
 
 h2 {
     font-weight: bold;
+    text-align: center;
     font-size: 2rem;
-    color: white;
+    color: aqua;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: aqua;
+    margin-left: 15%;
 }
 
 p {
@@ -334,12 +238,11 @@ p {
     color: #fff;
 }
 
-#me {
-    color: #fff;
-}
-
 .sectionA {
    margin-top: 4em;
+   padding-top: 4em;
+   padding-bottom: 4em;
+   background-color: #000000;
 }
 
 #languages img {
@@ -354,9 +257,10 @@ p {
 
 #aboutme {
     margin-top: 3em;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
 }
 
 #resume {
@@ -413,8 +317,6 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 #footer{
     margin-top: 5em;
