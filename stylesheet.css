@@ -26,20 +26,19 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 100%;
-    vertical-align: middle;
     padding-left: 0.5em;
     padding-right: 0.5em;
     text-align:center;
     background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
     border-color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
 #meetbutton:hover{
-    background-color: transparent;
+    background-color: white;
     border-color: #ffffff;
-    color: aqua;
+    color: rgb(255, 255, 255);
     border-radius: 3px;
 }
 
@@ -136,11 +135,10 @@ a {
     );
     background-size: 200% 100%;
     font-weight: 800;
-    padding: 0px 0;
+    padding: 5px 0;
     position: relative;
     background-clip:text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
