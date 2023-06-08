@@ -134,7 +134,7 @@ a {
       aqua 50%
     );
     font-weight: 800;
-    vertical-align: middle;
+    vertical-align: top;
     padding:5px 0;
     position: relative;
     background-clip:text;
