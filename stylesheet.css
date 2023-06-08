@@ -133,9 +133,9 @@ a {
       #ffffff 50%,
       aqua 50%
     );
-    background-size: 200% 100%;
     font-weight: 800;
-    padding: 5px 0;
+    vertical-align: top;
+    padding:5px 0;
     position: relative;
     background-clip:text;
     -webkit-background-clip: text;
