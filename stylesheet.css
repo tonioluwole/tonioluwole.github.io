@@ -96,6 +96,10 @@ body {
     float: right;
 }
 
+#rightnav img {
+    width: 60px;
+}
+
 a, a:link, a:visited{
     color: #ffffff;
 }
@@ -244,6 +248,13 @@ p {
    padding-bottom: 4em;
    background-color: #000000;
 }
+
+.sectionB {
+    margin-top: 4em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: #000000;
+ }
 
 #languages img {
     display: inline-block;
