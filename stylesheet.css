@@ -256,6 +256,10 @@ p {
     background-color: #000000;
  }
 
+ #reshead {
+    padding-top: 4em;
+ }
+
 #languages img {
     display: inline-block;
     margin-top:  2em;
