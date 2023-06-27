@@ -90,8 +90,6 @@
 
 /* Hero section stylizing*/
 #hero {
-    font-size: 5vmax;
-    font-weight: bold;
     font-family: 'Poppins';
 }
 
@@ -221,8 +219,9 @@ table {
 /* Gallery */
 .typing-effect {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    color: #333;
+    font-size: 5vmax;
+    font-weight: bold;
+    color: aqua;
 }
 /* */
 h1 {
