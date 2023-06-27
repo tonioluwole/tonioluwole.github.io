@@ -1,6 +1,8 @@
 @keyframes spin {
-    33% { content:"Designer";}
-    66% { content:"Programmer";}
+    20% { content: "Designer";}
+    40% { content: "Programmer";}
+    60% { content: "Writer"}
+    80% { content: "Forever Learner";}
     100% { content:"Problem Solver";}
   }
   
@@ -11,11 +13,47 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-
-#poppinsmain {
-    font-family: 'poppins'; 
+/* Hero */
+#poppinsmain { 
+    font-family: 'Poppins', sans-serif;
     font-size: 35px;
     color:#ffffff;
+    text-align:left;
+    margin-left: 10%;
+    margin-bottom: 12%;
+    display: block;
+}
+
+/**
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: aqua;
+	animation: blink .75s step-end infinite;
+}
+*/
+
+#hero{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vmax;
+    font-weight: bold;
+    color: aqua;
+    text-align:left;
+    margin-left: 10%;
+    margin-top: 12%;
+    display: inline-block;
+    width: 60%;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: aqua; 
+	}
 }
 
 #meetbutton {
@@ -194,20 +232,6 @@ table {
     left: 0;
     background-color:#000;
     opacity:1;
-}
-
-/* Gallery */
-.typing-effect {
-    font-family: 'Poppins', sans-serif;
-    font-size: 5vmax;
-    font-weight: bold;
-    color: aqua;
-    text-align:left;
-    margin-left: 10%;
-    margin-top: 12%;
-    margin-bottom: 12%;
-    display: block;
-    width: 60%;
 }
 
 /* */

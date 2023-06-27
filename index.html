@@ -35,35 +35,13 @@
     <!--=HERO=-->
     <div class="hero">
         <hero>
-            <h1 id="hero" class="typing-effect"></h1>
+            <h1 id="hero" class="typing-effect">Hi, I'm Toni</h1>
+            <div id="container">
+                <div id="poppinsmain"></div><div id="cursor"></div>
+            </div>
 
-            <script type="text/javascript">
-                const text = "Hi, I'm Toni"; // The text to display in the typing effect
-                const typingSpeed = 100; // The speed of typing (in milliseconds)
-                const delayAfterTyping = 1000; // The delay after the text is fully typed (in milliseconds)
-            
-                const typingElement = document.querySelector(".typing-effect");
-            
-                let charIndex = 0;
-            
-                function typeText() {
-                    if (charIndex < text.length) {
-                        typingElement.textContent += text.charAt(charIndex);
-                        charIndex++;
-                        setTimeout(typeText, typingSpeed);
-                    } else {
-                        setTimeout(() => {
-                            typingElement.textContent = "";
-                            charIndex = 0;
-                            typeText();
-                        }, delayAfterTyping);
-                    }
-                }
-            
-                typeText();
-            </script>
+           
 
-            <p id="poppinsmain"><span id="spin"></span><br></p> 
         </hero>        
     </div>
 
@@ -249,26 +227,7 @@
     <!-- Owl Carousel JS File-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-            $(document).ready(function(){
-                $(".owl-carousel").owlCarousel( {
-                    loop:true,
-                    margin:10,
-                    nav:true,
-                    responsive:{
-                        0:{
-                            items:1
-                        },
-                        600:{
-                            items:3
-                        },
-                        1000:{
-                            items:5
-                        }
-                    }
-                });
-            });
-    </script>
+    <script type="text/javascript" src="jscript.js"></script>
     
 </body>
 </html>
