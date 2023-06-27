@@ -5,33 +5,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<script type="text/javascript">
-    const text = "Hi, I'm Toni"; // The text to display in the typing effect
-    const typingSpeed = 100; // The speed of typing (in milliseconds)
-    const delayAfterTyping = 1000; // The delay after the text is fully typed (in milliseconds)
-
-    const typingElement = document.querySelector(".typing-effect");
-
-    let charIndex = 0;
-
-    function typeText() {
-        if (charIndex < text.length) {
-            typingElement.textContent += text.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeText, typingSpeed);
-        } else {
-            setTimeout(() => {
-                typingElement.textContent = "";
-                charIndex = 0;
-                typeText();
-            }, delayAfterTyping);
-        }
-    }
-
-    typeText();
-</script>
-
-
 <head>
     <title>Toni Oluwole</title>
     <link rel="icon" type="image/x-icon" href="/images/Favicon.ico">
@@ -63,6 +36,33 @@
     <div class="hero">
         <hero>
             <h1 id="hero" class="typing-effect"></h1>
+
+            <script type="text/javascript">
+                const text = "Hi, I'm Toni"; // The text to display in the typing effect
+                const typingSpeed = 100; // The speed of typing (in milliseconds)
+                const delayAfterTyping = 1000; // The delay after the text is fully typed (in milliseconds)
+            
+                const typingElement = document.querySelector(".typing-effect");
+            
+                let charIndex = 0;
+            
+                function typeText() {
+                    if (charIndex < text.length) {
+                        typingElement.textContent += text.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeText, typingSpeed);
+                    } else {
+                        setTimeout(() => {
+                            typingElement.textContent = "";
+                            charIndex = 0;
+                            typeText();
+                        }, delayAfterTyping);
+                    }
+                }
+            
+                typeText();
+            </script>
+
             <p id="poppinsmain"><span id="spin"></span><br></p> 
         </hero>        
     </div>
