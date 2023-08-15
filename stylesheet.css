@@ -1,8 +1,8 @@
 @keyframes spin {
-    20% { content: "Designer";}
+    20% { content: "Web Developer";}
     40% { content: "Programmer";}
     60% { content: "Writer"}
-    80% { content: "Forever Learner";}
+    80% { content: "Sales Enthusiast";}
     100% { content:"Problem Solver";}
   }
   
@@ -228,7 +228,7 @@ table {
 
 .thumb img:hover{
     top: 0;
-    border: 2px solid aqua;
+    border: 2px solid white;
     left: 0;
     background-color:#000;
     opacity:1;
@@ -293,14 +293,14 @@ p {
     width: 80%;
 }
 
-#A1, #B2 {
+#A1 {
     border-radius: 5px;
     border: solid #000;
     opacity: 0.9;
 
 }
 
-#A1:hover, #B2:hover {
+#A1:hover {
     opacity: 1;
 }
 
