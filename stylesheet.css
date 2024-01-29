@@ -21,15 +21,6 @@
     height: 500px;
 }
 
-#feature-text { 
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    color:#ffffff;
-    text-align:left;
-    margin-left: 10%;
-    display: block;
-}
-
 /**
 #cursor {
 	display: inline-block;
@@ -288,12 +279,22 @@ td p {
 
 #languages img {
     display: inline-block;
-    margin-top:  2em;
-    margin-bottom: 2em;
+    
     height: auto;
     max-width: 200px;
+    padding-bottom: 50px;
     vertical-align: middle;
 }
+
+.owl {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .grid-item {
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
 
 #aboutme {
     text-align: center;
