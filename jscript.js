@@ -1,11 +1,6 @@
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     document.location = "https://tonioluwole.github.io/mobiletoni.github.io/";
 }
-
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
 
 const carouselText = [
 
@@ -16,8 +11,8 @@ const carouselText = [
     {text: "Problem Solver"}
   ]
   
-  $( document ).ready(async function() {
-    carousel(carouselText, "#feature-text")
+  $(document).ready(async function() {
+    carousel(carouselText, "#feature")
   });
   
   async function typeSentence(sentence, eleRef, delay = 50) {

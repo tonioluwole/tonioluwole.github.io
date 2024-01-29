@@ -269,6 +269,9 @@ h3 {
 p {
     font-size: 17px;
     color: #fff;
+}
+
+td p {
     padding-left: 20px;
 }
 
