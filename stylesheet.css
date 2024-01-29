@@ -1,11 +1,4 @@
-@keyframes spin {
-    20% { content: "Web Developer";}
-    40% { content: "Programmer";}
-    60% { content: "Writer"}
-    80% { content: "Sales Enthusiast";}
-    100% { content:"Problem Solver";}
-  }
-  
+
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
   * {
     margin: 0;
@@ -21,6 +14,19 @@
     text-align:left;
     margin-left: 10%;
     margin-bottom: 12%;
+    display: block;
+}
+
+.hero {
+    height: 500px;
+}
+
+#feature-text { 
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color:#ffffff;
+    text-align:left;
+    margin-left: 10%;
     display: block;
 }
 
@@ -214,11 +220,12 @@ table {
 }
 
 .thumb img {
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-radius: 5px;
     border: 2px solid #000;
     display: inline-block;
-    margin-bottom: 2em;
-    width: 95%;
+    width: 100%;
     position: relative;
     opacity: 0.9;
     margin-left: auto;
@@ -228,7 +235,7 @@ table {
 
 .thumb img:hover{
     top: 0;
-    border: 2px solid white;
+    border: 2px solid black;
     left: 0;
     background-color:#000;
     opacity:1;
@@ -253,9 +260,16 @@ h4 {
     margin-left: 15%;
 }
 
-p {
-    font-size: 20px;
+h3 {
+    font-size: 23px;
     color: #fff;
+    padding-left: 20px;
+}
+
+p {
+    font-size: 17px;
+    color: #fff;
+    padding-left: 20px;
 }
 
 .sectionA {
@@ -282,7 +296,7 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
 }
 
 #resume {
