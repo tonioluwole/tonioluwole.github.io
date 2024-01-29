@@ -3,6 +3,10 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     document.location = "https://tonioluwole.github.io/mobiletoni.github.io/";
 }
 
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+
 const carouselText = [
 
     {text: "Tech Enthusiast"},
